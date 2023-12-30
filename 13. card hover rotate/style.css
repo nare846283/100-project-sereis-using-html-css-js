@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ff2727;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 500px; */
+    /* height: 400px; */
+    /* background-color: #fff;
+    box-shadow: 0px 0px 50px #ccc; */
+    position: relative;
+}
+
+.card {
+    border-radius: 10px;
+    width: 200px;
+    height: 280px;
+    background-color: #fff;
+    box-shadow: 0px 0px 0px #ccc;
+    position: absolute;
+    transition: all ease .5s;
+}
+
+.card-container>#card-1 {
+    background-image: url(https://images.unsplash.com/photo-1508700929628-666bc8bd84ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card-container>#card-2 {
+    background-image: url(https://images.unsplash.com/photo-1616253337425-11cec9e2504f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card-container>#card-3 {
+    background-image: url(https://images.unsplash.com/photo-1518172264979-28d0d5a2a9ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.card-container:hover #card-1 {
+    transform: translateX(-50px) rotate(-30deg);
+    background-color: #f72525;
+}
+
+.card-container:hover #card-2 {
+    transform: translateX(0px) rotate(-20deg);
+    background-color: #be8282;
+}
+
+.card-container:hover #card-3 {
+    transform: translateX(50px) rotate(-10deg);
+    background-color: #491515;
+}
+
+.card-container>#card-2:hover {
+    transform: translateX(-50px) rotate(0deg);
+}
+
+.card-container>#card-1:hover {
+    transform: translateX(-100px) rotate(0deg);
+}
